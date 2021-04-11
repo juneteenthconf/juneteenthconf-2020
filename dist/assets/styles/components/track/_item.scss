@@ -1,0 +1,185 @@
+.track-item {
+  background-color: rgba($track2-bg, 0.5);
+  border: 0px solid transparent;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 14 / 16 + rem;
+  color: #1a2d19;
+  padding: 12px;
+  padding-top: 0px;
+  position: relative;
+  text-align: left;
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 20px 20px;
+  }
+
+  &:hover {
+    color: #1a2d19;
+    text-decoration: none;
+    box-shadow: none !important;
+
+  }
+
+  &.active {
+    border-left:4px solid #1a2d19;
+
+    &:hover {
+      box-shadow: none !important;
+    }
+  }
+
+  &__title {
+
+
+    @include media-breakpoint-up(lg) {
+       float:left;
+       display: inline;
+       width: 50%;
+       margin-top:-18px;
+    }
+    em {
+      font-style: normal;
+      font-weight: 300;
+    }
+    h2 {
+      display: inline-flex;
+      font-size: 18 / 12 + rem;
+    }
+  }
+
+  &__now,
+  &__next {
+    strong {
+      font-size: 13 / 16 + rem;
+      font-weight: 500;
+    }
+
+    h3 {
+      font-size: 14 / 16 + rem;
+
+      a {
+        color: #1a2d19;
+      }
+    }
+  }
+
+  .speaker {
+    margin-bottom: 0;
+
+    + .speaker {
+      margin-top: 0.15rem;
+    }
+    &-avatar {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__state {
+    color: #1a2d19;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    font-size: 12 / 16 + rem;
+    text-transform: uppercase;
+
+    strong {
+      font-weight: 800;
+    }
+
+    .active {
+      display: none;
+    }
+
+    .play-icon {
+      margin-top: 5px;
+      margin-right: 5px;
+      span {
+        background-color: rgb(255, 255, 255);
+        float: left;
+        height: 8px;
+        margin-left: 4px;
+        width: 8px;
+
+        animation-name: bounce;
+        animation-duration: 2.24s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        border-radius: 20px;
+
+        &:nth-child(1) {
+          animation-delay: 0.45s;
+        }
+        &:nth-child(2) {
+          animation-delay: 1.05s;
+        }
+        &:nth-child(3) {
+          animation-delay: 1.35s;
+        }
+      }
+    }
+    // .selectable {
+
+    .active & {
+      // border: 2px solid red;
+      pointer-events: none;
+    }
+
+    .active {
+      .active & {
+        display: inline-flex;
+      }
+    }
+
+    .selectable {
+      .active & {
+        display: none;
+      }
+    }
+  }
+
+  &__subtitles {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  // Theme for track columns
+
+}
+
+.circleG {
+  background-color: rgb(255, 255, 255);
+  float: left;
+  height: 31px;
+  margin-left: 17px;
+  width: 31px;
+
+  animation-name: bounce;
+  animation-duration: 2.24s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  border-radius: 20px;
+}
+
+@keyframes bounce {
+  0% {
+  }
+
+  50% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+  }
+}
+
+.track1 {
+  background-color: $track2-bg;
+}
+
+.track2 {
+  background-color: $track2-bg;
+}

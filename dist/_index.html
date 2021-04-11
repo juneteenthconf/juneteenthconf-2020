@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="/main.2466b6af.css"><title>JuneteenthConf - June 19th and 20th 2020</title><meta name="description" content="Juneteenth Conference is a free virtual tech conference made for and featuring Black people in technology. The conference celebrates Black Excellence and promotes community for Black people who are severely underrepresented in the tech industry. We welcome anyone and everyone aligned with this goal to come and listen to the conversation."><meta property="og:type" content="website"><meta property="og:title" content="JuneteenthConf - June 19th and 20th 2020"><meta property="og:description" content="Juneteenth Conference is a free virtual tech conference made for and featuring Black people in technology. The conference celebrates Black Excellence and promotes community for Black people who are severely underrepresented in the tech industry. We welcome anyone and everyone aligned with this goal to come and listen to the conversation."><meta property="og:url" content="https://www.juneteenthconf.com"><meta property="og:image" content="https://www.juneteenthconf.com/banner.png"><meta property="og:image:width" content="900"><meta property="og:image:height" content="318"><meta property="twitter:card" content="summary"><meta name="twitter:site" content="@juneteenthconf"><meta name="twitter:creator" content="@juneteenthconf"><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.a31fded8.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.9eb736b9.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.ae97f0a6.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.9cf5984e.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.6e5b9ad9.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.f5e4c73f.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.53eeb095.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.15a06a01.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.45f748c9.png"><link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.f5098945.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.0e639467.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.212d9f95.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.a7c23496.png"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.53eeb095.png"><meta name="theme-color" content="#ffffff"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-33227866-25"></script><script>function a(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],a("js",new Date),a("config","UA-33227866-25");</script></head></html><body> <a href="#maincontentnav" class="invisibleskipnav">Skip to main content</a><a href="#menunav" class="invisibleskipnav">Skip to menu</a><a href="#sponsorsnav" class="invisibleskipnav">Skip to sponsors</a> <a href="#registrationnav" class="invisibleskipnav">Skip to registration and donations buttons</a> <header class="header"> <div class="container-fluid"> <div class="header-wrap"> <div> <a href="/index.html" title="JuneteenthConf" class="brand"> <img src="/logo.182f44d9.png" alt="Juneteenth Conference Logo." class="header-logo"> </a> </div> <div class="my-2 my-lg-0"> <a href="/register.html" class="btn my-2 my-sm-0">Keep informed</a> <a href="http://opencollective.com/juneteenth-conference" class="btn my-2 my-sm-0">Donate</a> <a href="/speakers.html" class="btn">2020 Speakers</a> <a href="/about.html" class="btn my-2 my-sm-0">About Us</a> <a href="/coc.html" class="btn my-2 my-sm-0">Code of Conduct</a> <a href="/juneteenth.html" class="btn btn-outline-dark my-2 my-sm-0">What is Juneteenth</a> </div> </div> </div>
+</header> <main> <section class="hero"> <div class="container"> <div class="row"> <div class="col-md-6"> <div class="hero__image"> <img src="/Juneteenthconf-illustration.6ddd053c.png" alt="Juneteenth Conference Header, containing conference illustration"> </div> </div> <div class="col-md-6"> <div class="hero__copy"> <a name="maincontentnav" id="maincontentnav"></a> <h1 class="h2">June 19th &amp; 20th 2020</h1> <h2 class="h6">Streaming to you wherever you are!</h2> <p> <strong>The Mission of JuneteenthConf, Unl. is to provide a space that celebrates Black Excellence in technology for Black people in tech to learn and grow and to amplify their voices. We aim to be a counterbalance to the biases, implicit or otherwise, that hold our industry and our society back.</strong> </p> <p> Juneteenth Conference is a free virtual tech conference made for and featuring Black people in Technology. The conference celebrates Black Excellence and promotes community for Black people who are severely underrepresented, overlooked, and underutilized in the tech industry. We welcome anyone and everyone aligned with this goal to come and listen to the conversation. </p> </div> </div> </div> <div class="hero__cta"> <a name="registrationnav" id="registrationnav"></a> <a href="/register.html" class="btn btn-primary btn-next">Register as attendee</a> <a href="https://www.eventbrite.com/e/juneteenthconf-2020-retroactive-donations-tickets-110444267778" target="_blank" class="btn btn-primary btn-next">Sponsor the event</a> </div> </div> </section> <section class="schedule"> <div class="container"> <div class="row"> <div class="col"> <h2 class="h1 schedule__title">Schedule</h2> </div> </div> <div class="schedule-timezone"> <select name="timezone-select" id="timezone-select" class="custom-select"></select> </div> <div id="schedule-container"></div> </div>
+</section><script id="schedule-template" type="text/x-handlebars-template">
+  {{#each Days}}
+    <div class="schedule__header">
+      <h2 class="schedule__title">{{title}}</h2>
+    </div>
+    <div class="schedule-view">
+      <div class="schedule-timeline" id="timeline-wrapper-{{id}}"></div>
+      <div class="schedule-tracks" id="schedule-wrapper-{{id}}"></div>
+    </div>
+  {{/each}}
+</script><script id="track-template" type="text/x-handlebars-template">
+
+  <div class="schedule-track" data-schedule-track="{{id}}">
+
+    <h2 class="schedule-track__title">Track<em>{{title}}</em></h2>
+    <ul class="schedule-track__list">
+    {{#each talks}}
+      {{#if isBreak}}
+      <li class="schedule-break" style="height: {{height}}px;">
+        <span class="sr-only">Break</span>
+      </li>
+      {{else}}
+      <li class="schedule-talk" style="height: {{height}}px;">
+        <a href="#talk-{{id}}" data-toggle="modal" class="schedule-talk-item">
+          {{#if smallBlock}}
+            <div class="smallTitle">
+              <h3>{{title}}</h3>
+            </div>
+          {{else}}
+            <h3>{{title}}</h3>
+            {{#if multipleSpeakers}}
+            <div class="speaker">
+              {{#each speakers}}
+              <img src="/assets/images/{{id}}.jpg" alt="{{fullName}}" class="speaker-avatar">
+              {{/each}}
+              <div class="speaker-body">
+                <strong>Multiple speakers</strong>
+                <div class="timeframe">
+                  <time title="Talk starts at" datetime="{{startsAt}}" data-talk-timestamp="ddd Do MMM HH:mm"></time>
+                  -
+                  <time title="Talk ends at" datetime="{{endsAt}}" data-talk-timestamp="HH:mm"></time>
+                </div>
+              </div>
+            </div>
+            {{else}}
+            <div class="speaker">
+              {{#each speakers}}
+              <img src="/assets/images/{{id}}.jpg" alt="{{fullName}}" class="speaker-avatar">
+              <div class="speaker-body">
+                <strong>{{fullName}}</strong>
+              {{/each}}
+                <div class="timeframe">
+                  <time title="Talk starts at" datetime="{{startsAt}}" data-talk-timestamp="ddd Do MMM HH:mm"></time>
+                  -
+                  <time title="Talk ends at" datetime="{{endsAt}}" data-talk-timestamp="HH:mm"></time>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+          {{/if}}
+
+
+        </a>
+      </li>
+
+      <div class="modal fade modal-track{{trackid}}" id="talk-{{id}}" tabindex="-1" role="dialog" aria-labelledby="talkModalLabel"
+      aria-hidden="true" data-talk-modal="{{id}}">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h5 class="modal-title" id="talkModalLabel">{{title}}</h5>
+                  <div class="timeframe">
+                    <include src="assets/images/clock.svg"></include>
+                    <svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                      <path role="presentation"  fill="#102942" d="M10,0 C4.47704545,0 0,4.47727273 0,10 C0,15.5229545 4.47704545,20 10,20 C15.5229545,20 20,15.5229545 20,10 C20,4.47727273 15.5229545,0 10,0 Z M10,18.1818182 C5.48136364,18.1818182 1.81818182,14.5188636 1.81818182,10 C1.81818182,5.48136364 5.48136364,1.81818182 10,1.81818182 C14.5186364,1.81818182 18.1818182,5.48136364 18.1818182,10 C18.1818182,14.5188636 14.5186364,18.1818182 10,18.1818182 Z M13.37,12.0845455 C13.725,12.4395455 13.725,13.0152273 13.37,13.3702273 C13.1927273,13.5475 12.9597727,13.6363636 12.7272727,13.6363636 C12.4947727,13.6365909 12.2620455,13.5477273 12.0845455,13.3702273 L9.35727273,10.6429545 C9.18681818,10.4725 9.09090909,10.2413636 9.09090909,10 L9.09090909,4.54545455 C9.09090909,4.04340909 9.49795455,3.63636364 10,3.63636364 C10.5020455,3.63636364 10.9090909,4.04340909 10.9090909,4.54545455 L10.9090909,9.62363636 L13.37,12.0845455 Z"/>
+                    </svg>
+                    <time title="Talk starts at" datetime="{{startsAt}}" data-talk-timestamp="ddd Do MMM YYYY HH:mm"></time>
+                    -
+                    <time title="Talk ends at" datetime="{{endsAt}}" data-talk-timestamp="HH:mm"></time>
+                  </div>
+                  <div class="description">
+                    <p>
+                      {{{description}}}
+                    </p>
+                  </div>
+                  {{#if youtube}}
+                  <a href="{{youtube}}" target="_blank" class="btn btn-secondary btn-next" aria-label="link text - new window">Play on YouTube</a>
+                  {{else}}
+                  <a href="https://www.addevent.com/dir/?client=aAsRvIjWGzeyNRVnMmup88049&start={{startsAt}}&duration=60&title={{title}}&timezone=UTC&description={{title}} by {{fullName}} Virtual Azure Community Day. Time is in UTC" target="_blank" class="btn btn-secondary" aria-label="link text - new window">+ Add to calendar</a>
+                  {{/if}}
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+
+                  {{#each speakers}}
+
+                  <div class="speaker">
+                    <img src="/assets/images/{{id}}.jpg" alt="{{fullName}}" class="speaker-avatar">
+                    <div class="speaker-body">
+                      <strong>{{fullName}}</strong><br>
+                      {{tagLine}}
+                    </div>
+                  </div>
+                  <p class="bio">
+                    {{{bio}}}
+                  </p>
+                  {{/each}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/if}}
+    {{/each}}
+    </ul>
+  </div>
+</script><script id="timeline-template" type="text/x-handlebars-template">
+  <ul>
+    {{#each item}}
+    <li class="schedule-timeline__item">
+      <time datetime="{{timestamp}}" data-talk-timestamp="HH:mm">{{time}}</time>
+    </li>
+    {{/each}}
+  </ul>
+</script><script id="timezone-template" type="text/x-handlebars-template">
+  {{#each options}}
+  <option value="{{@key}}">{{this}}</option>
+  {{/each}}
+</script> <section class="sponsors"> <a name="sponsorsnav" id="sponsorsnav"></a> <div class="container"> <div class="row mb-4"> <div class="col-md-8 offset-md-2"> <h2 class="h1">Sponsors</h2> <p> <strong> You can donate to the event through <a href="https://www.eventbrite.com/e/juneteenthconf-2020-retroactive-donations-tickets-110444267778" target="_blank" aria-label="link text - new window">Eventbrite</a>, made possible by <a href="https://dctechcommunitychampions.org/" target="_blank" aria-label="link text - new window">DC Tech Community Champions</a> </strong> </p> </div> </div> <div class="row justify-content-center"> <div class="col-6 col-sm-4 col-md-3 col-lg-2"> <a href="https://dctechcommunitychampions.org/" target="_blank" class="sponsor" aria-label="go to DC Tech Community Champions"> <img src="/devopsdays-dc.e4d40a2e.png" alt="DC Tech Community Champions"> </a> </div> <div class="col-6 col-sm-4 col-md-3 col-lg-2"> <a href="https://www.thursday.cloud/" target="_blank" class="sponsor" aria-label="go to Thursday.Cloud foundation"> <img src="/thursday-cloud.8aad15dd.jpg" alt="Thursday.Cloud foundations"> </a> </div> <div class="col-6 col-sm-4 col-md-3 col-lg-2"> <a href="https://excella.com/" target="_blank" class="sponsor" aria-label="go to Excella"> <img src="/Excella vertical red_black.7aa1b29d.png" alt="Excella"> </a> </div> <div class="col-6 col-sm-4 col-md-3 col-lg-2"> <a href="https://blackcodecollective.com/" target="_blank" class="sponsor" aria-label="go to Black Code Collective"> <img src="/blackCodeCollective.758e21ea.png" alt="Black Code Collective"> </a> </div> <div class="col-6 col-sm-4 col-md-3 col-lg-2"> <a href="https://dotnetfoundation.org/" target="_blank" class="sponsor" aria-label="go to the .NET Foundation"> <img src="/dotNetFoundation.f74ab0d2.svg" alt=".NET Foundation"> </a> </div> <div class="col-6 col-sm-4 col-md-3 col-lg-2"> <a href="https://www.jetbrains.com/" target="_blank" class="sponsor" aria-label="go to Jetbrains"> <img src="/jetbrains.ec0ba20c.png" alt="Jetbrains"> </a> </div> </div> </div>
+</section> </main> <footer class="footer"> <div class="footer-socials"> <a href="https://twitter.com/juneteenthunl" title="Twitter" target="_blank" aria-label="link text - new window"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" viewBox="0 0 30 22"><path fill="#FFF" d="M22.717 2.572c-.831-.946-2.017-1.55-3.328-1.571-2.519-.042-4.56 2.088-4.56 4.758 0 .378.04.748.118 1.103-3.79-.247-7.15-2.222-9.4-5.2a5.054 5.054 0 00-.617 2.44c0 1.692.805 3.193 2.029 4.08a4.356 4.356 0 01-2.066-.632v.062c0 2.362 1.572 4.343 3.658 4.805a4.29 4.29 0 01-2.06.07c.58 1.936 2.265 3.35 4.26 3.397-1.56 1.297-3.527 2.069-5.663 2.064-.368 0-.731-.024-1.088-.07 2.018 1.386 4.415 2.193 6.99 2.194 8.388.002 12.975-7.305 12.975-13.643 0-.208-.005-.415-.013-.62a9.386 9.386 0 002.275-2.45 8.695 8.695 0 01-2.619.717 4.68 4.68 0 002.005-2.622 8.75 8.75 0 01-2.896 1.118z"/></svg> </a> <a href="https://www.facebook.com/junteenthconf/" title="Facebook" target="_blank" aria-label="link text - new window"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" viewBox="0 0 30 22"><path fill="#FFF" d="M12.069 21.352v-10.19H10V7.784h2.069V5.742c0-2.755.822-4.742 3.836-4.742h3.585v3.37h-2.525c-1.264 0-1.552.842-1.552 1.722v1.692h3.89l-.53 3.378h-3.36v10.19H12.07z"/></svg> </a> <a href="https://www.youtube.com/channel/UCbbgMoZpzSPu6nv1yysylHw" title="Youtube" target="_blank" aria-label="link text - new window"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" viewBox="0 0 30 22"><path fill="#FFF" d="M28.04 5.149s-.267-1.885-1.087-2.715c-1.038-1.088-2.202-1.093-2.736-1.157C20.395 1 14.662 1 14.662 1h-.012s-5.733 0-9.555.277c-.534.064-1.698.069-2.736 1.157-.82.83-1.086 2.715-1.086 2.715S1 7.36 1 9.574v2.074c0 2.212.273 4.425.273 4.425s.267 1.884 1.086 2.714c1.038 1.089 2.403 1.054 3.01 1.168 2.186.21 9.287.275 9.287.275s5.74-.009 9.561-.285c.534-.064 1.698-.07 2.736-1.158.82-.83 1.087-2.714 1.087-2.714s.272-2.213.272-4.425V9.574c0-2.213-.272-4.425-.272-4.425zM11.837 14.16l-.002-7.682 7.38 3.855-7.378 3.827z"/></svg> </a> <a href="https://www.linkedin.com/company/juneteenthconf/" title="LinkedIn" target="_blank" aria-label="link text - new window"> <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M-1-1h582v402H-1z"/><g><path fill="#fff" d="M32 30a2 2 0 01-2 2H2a2 2 0 01-2-2V2a2 2 0 012-2h28a2 2 0 012 2v28z"/><path d="M7 11h4v14H7zM20.499 11c-2.791 0-3.271 1.018-3.499 2v-2h-4v14h4v-8c0-1.297.703-2 2-2 1.266 0 2 .688 2 2v8h4v-7c0-4-.521-7-4.501-7z"/><circle r="2" fill="#020202" cy="8" cx="9"/></g></svg> </a>  </div> <p> Artwork by <a href="https://www.havananguyen.com/">Havana Nguyen</a> <a href="https://twitter.com/havanatweets" title="Twitter" target="_blank" aria-label="link text - new window"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" viewBox="0 0 30 22"><path fill="#FFF" d="M22.717 2.572c-.831-.946-2.017-1.55-3.328-1.571-2.519-.042-4.56 2.088-4.56 4.758 0 .378.04.748.118 1.103-3.79-.247-7.15-2.222-9.4-5.2a5.054 5.054 0 00-.617 2.44c0 1.692.805 3.193 2.029 4.08a4.356 4.356 0 01-2.066-.632v.062c0 2.362 1.572 4.343 3.658 4.805a4.29 4.29 0 01-2.06.07c.58 1.936 2.265 3.35 4.26 3.397-1.56 1.297-3.527 2.069-5.663 2.064-.368 0-.731-.024-1.088-.07 2.018 1.386 4.415 2.193 6.99 2.194 8.388.002 12.975-7.305 12.975-13.643 0-.208-.005-.415-.013-.62a9.386 9.386 0 002.275-2.45 8.695 8.695 0 01-2.619.717 4.68 4.68 0 002.005-2.622 8.75 8.75 0 01-2.896 1.118z"/></svg> </a> </p> <p> ©Copyright 2020 <a href="https://juneteenthconf.com">JuneteenthConf, Unl</a>. All rights reserved. </p>
+</footer> <script src="/main.cae3fa90.js"></script> </body>

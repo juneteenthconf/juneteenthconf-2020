@@ -1,0 +1,92 @@
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  
+  &__image {
+    padding-top: 1rem;
+    
+    img {
+      @include img-fluid;
+      text-align: center;
+    }
+
+    @include media-breakpoint-down(sm) {
+      overflow: hidden;
+
+      $overflow: 0;
+      img {
+        margin-left: -#{$overflow}vw;
+        margin-right: -#{$overflow}vw;
+        max-width: 100 + $overflow * 2 + vw;
+      }
+    }
+  }
+
+  &__cta {
+    text-align: center;
+    margin: 1rem 0;
+
+    .btn + .btn {
+      margin: 1rem;
+    }
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+    }
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+
+      img {
+        max-width: 75%;
+      }
+    }    
+  }
+
+  &__copy {
+    padding-top:4.5rem;
+    padding-bottom: 2rem;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      padding-top:2rem;
+      padding-bottom: 0rem;      
+    }
+
+    .h2 {
+      @include media-breakpoint-up(lg) {
+        text-align: left;
+      }
+    }
+
+    .h6 {
+      padding-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+
+  }
+
+  &__copy-center {
+    text-align: center;
+    padding-bottom:0rem;
+
+    .h2 {
+      text-align: center;
+      @include media-breakpoint-up(lg) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__cta-live {
+    text-align: center;
+    margin: 1rem 0;
+    margin-bottom: 4rem;
+    
+    .btn + .btn {
+      margin: 1rem;
+    }
+  }
+}

@@ -1,0 +1,189 @@
+[
+    {
+        "image": "assets/images/people/michael.jpg",
+        "name": "Michael Brown",
+        "title": "Software Engineer at Microsoft",
+        "description": "Founder of JuneteenthConf",
+        "twitter":"browniepoints",
+        "facebook":"",
+        "linkedin":""
+    },
+    {
+        "image": "assets/images/people/almicia.jpg",
+        "name": "Almicia Dunson",
+        "title": "Software Engineer at Microsoft",
+        "description": "",
+        "twitter":"",
+        "facebook":"",
+        "linkedin":""
+    },
+    {
+        "image": "assets/images/people/angelaRiggs.png",
+        "name": "Angela Riggs",
+        "title": "QA Manager at Instrument",
+        "description":"",
+        "twitter":"AngelaRiggs_",
+        "linkedin":"angelariggs"
+    },
+    {
+        "image": "assets/images/people/cotishea.jpg",
+        "name": "Cotishea Anderson",
+        "title": "Software Engineer Manager at Microsoft",
+        "description": "",
+        "twitter":"",
+        "facebook":"",
+        "linkedin":""
+    },
+    {
+        "image": "assets/images/people/henk.jpg",
+        "name": "Henk Boelman",
+        "title": "Cloud Advocate at Microsoft",
+        "description": "",
+        "facebook": "henk.boelman",
+        "twitter": "hboelman",
+        "linkedin": "henkboelman"
+    },
+    {
+        "image": "assets/images/people/labrina.jpg",
+        "name": "LaBrina Loving",
+        "title": "Software Engineer at Microsoft",
+        "description": "",
+        "twitter":"chixcancode",
+        "facebook":"",
+        "linkedin":""
+    },
+    {
+        "image": "assets/images/people/lilian.jpg",
+        "name": "Lilian Kasem",
+        "title": "Software Engineer at Microsoft",
+        "description": "",
+        "twitter":"liliankasem",
+        "facebook":"",
+        "linkedin":"liliankasem"
+    },
+    {
+        "image": "assets/images/people/tess.jpg",
+        "name": "Tess DiStefano",
+        "title": "Software Engineer at Microsoft",
+        "description": "",
+        "twitter":"tess_distefano",
+        "facebook":"tess.distefano",
+        "linkedin":"tessdistefano"
+    },
+    {
+        "image": "assets/images/people/valerie.jpg",
+        "name": "Valerie Phoenix",
+        "title": "Founder of Tech By Choice",
+        "description": "",
+        "twitter":"DigitalBlkHippy",
+        "facebook":"TechByChoiceOrg",
+        "linkedin":""
+    },
+    {
+        "image": "assets/images/people/bismarck.jpg",
+        "name": "Bismarck Odoom",
+        "title": "BS/Research Student at KNUST",
+        "description": "",
+        "facebook": "bismarckbamfoodoom",
+        "twitter": "BismarckBamfo",
+        "linkedin": "bbodoom"
+    },
+    {
+        "image": "assets/images/people/etienne.jpg",
+        "name": "Etienne Margraff",
+        "title": "Software Engineer Manager at Microsoft",
+        "description": "",
+        "twitter":"meulta",
+        "facebook":"",
+        "linkedin":""
+    },
+    {
+        "image": "assets/images/people/jo-elle.jpg",
+        "name": "Jo-Elle Husband",
+        "title": "Founder and Web Designer at Head of House",
+        "description": "",
+        "twitter":"headofhouseco",
+        "facebook":"",
+        "linkedin":""
+    },
+    {
+        "image": "assets/images/people/jon.jpg",
+        "name": "Jon Galloway",
+        "title": "Senior Program Manager at Microsoft",
+        "description": "",
+        "twitter":"jongalloway",
+        "facebook":"",
+        "linkedin":"jongalloway"
+    },
+    {
+        "image": "assets/images/people/jordan.jpg",
+        "name": "Jordan Matthiesen",
+        "title": "Senior Program Manager at Microsoft",
+        "description": "",
+        "twitter":"jmatthiesen",
+        "facebook":"",
+        "linkedin":"jordanmatthiesen"
+    },
+    {
+        "image": "assets/images/people/josh.jpg",
+        "name": "Josh Holmes",
+        "title": "Software Engineer Manager at Microsoft",
+        "description": "",
+        "twitter":"joshholmes",
+        "facebook":"",
+        "linkedin":""
+    },
+    {
+        "image": "assets/images/people/katie.jpg",
+        "name": "Katie Friesema",
+        "title": "Technology Transformation Manager at Best Buy",
+        "description": "",
+        "twitter":"katiefrank",
+        "facebook":"",
+        "linkedin":"kafrank"
+    },
+    {
+        "image": "assets/images/people/melody.jpg",
+        "name": "Melody Miller",
+        "title": "Owner, SoulWork Innovations, LLC",
+        "description": "",
+        "twitter":"",
+        "facebook":"",
+        "linkedin":""
+    },    
+    {
+        "image": "assets/images/people/narmatha.jpg",
+        "name": "Narmatha Balasundaram",
+        "title": "Software Engineer at Microsoft",
+        "description": "",
+        "twitter":"narmathabala",
+        "facebook":"",
+        "linkedin":"narmathabala"
+    },
+    {
+        "image": "assets/images/people/robert.jpg",
+        "name": "Robert Jordan",
+        "title": "Engineer at Microsoft",
+        "description": "",
+        "twitter":"",
+        "facebook":"",
+        "linkedin":""
+    },
+    {
+        "image": "assets/images/people/suzanne.jpg",
+        "name": "Suzanne Daniels",
+        "title": "Azure Developer Engagement Lead at Microsoft",
+        "description": "",
+        "twitter":"",
+        "facebook":"",
+        "linkedin":"suzannedaniels"
+    },
+    {
+        "image": "assets/images/people/hannah.jpg",
+        "name": "Hannah Kennedy",
+        "title": "Software Engineer at Microsoft",
+        "description": "",
+        "twitter":"mindlessroman",
+        "linkedin":"hannah-kennedy"
+    }
+]
